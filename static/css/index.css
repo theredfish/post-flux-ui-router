@@ -1,0 +1,8 @@
+.list-group {
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.view-post {
+	height: 300px;
+}
