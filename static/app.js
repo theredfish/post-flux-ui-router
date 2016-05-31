@@ -11,7 +11,7 @@ var postsFlux = angular.module('postsFlux', ['restangular', 'ui.router']);
 
 postsFlux.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('/posts');
-	Restangular.setBaseUrl('http://jsonplaceholder.typicode.com');
+
 	$stateProvider.state('posts', {
 		url: '/posts',
 		views: {
