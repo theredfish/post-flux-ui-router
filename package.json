@@ -4,8 +4,8 @@
   "description": "Simple project to try UI Router - Rest angular",
   "main": "static/app.js",
   "scripts": {
-    "clean": "rm -rf dist/*",
-    "build-css": "mkdir dist/css && cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/css/bootstrap.min.css && cp static/css/index.css dist/css/index.css",
+    "clean": "rm -rf dist",
+    "build-css": "mkdir dist && mkdir dist/css && cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/css/bootstrap.min.css && cp static/css/index.css dist/css/index.css",
     "build-copy-file": "cp static/index.html dist/index.html && cp -r static/fragments dist/fragments",
     "browserify": "browserify static/app.js -o dist/app.js -t [babelify --presets[es2015]]",
     "build": "npm run clean && npm run build-css && npm run build-copy-file && npm run browserify"
